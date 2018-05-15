@@ -1,0 +1,21 @@
+
+MariaDB [(none)]> SHOW MASTER STATUS;
++-----------------------+----------+--------------+------------------+
+| File                  | Position | Binlog_Do_DB | Binlog_Ignore_DB |
++-----------------------+----------+--------------+------------------+
+| instance-4-bin.000001 |      777 |              |                  |
++-----------------------+----------+--------------+------------------+
+
+CHANGE MASTER TO
+MASTER_HOST='10.142.0.3',
+MASTER_USER='slave',
+MASTER_PASSWORD='bigdata',
+MASTER_PORT=3306,
+MASTER_LOG_FILE='instance-4-bin.000001',
+MASTER_LOG_POS=777,
+MASTER_CONNECT_RETRY=10,
+
+
+
+
+
