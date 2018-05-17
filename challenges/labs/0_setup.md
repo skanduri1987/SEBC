@@ -4,6 +4,14 @@
 
 2. Linux Release : centos7 64bit.
 
+3. List All Instances:
+ 
+ 10.142.0.2 instance-1.c.trusty-axe-170408.internal
+ 10.142.0.3 instance-3.c.trusty-axe-170408.internal
+ 10.128.0.2 instance-3.c.trusty-axe-170408.internal
+ 10.128.0.3 instance-4.c.trusty-axe-170408.internal
+ 10.138.0.2 instance-5.c.trusty-axe-170408.internal
+
 3. Filesystem Details 
 
 [skanduri1987@instance-1 ~]$ df -hT
@@ -81,4 +89,10 @@ rangers:x:2902:
 uid=2800(jimenez) gid=2901(astros) groups=2901(astros)
 [root@instance-1 skanduri1987]# id beltran
 uid=2900(beltran) gid=2902(rangers) groups=2902(rangers)
+useradd -u 2800 jimenez
+useradd -u 2900 beltran
+groupadd astros
+groupadd rangers
+usermod -g astros jimenez
+usermod -g rangers beltran
  
