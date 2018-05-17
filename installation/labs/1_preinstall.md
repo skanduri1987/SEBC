@@ -166,7 +166,7 @@ Cluster Installation:
 		 			  			 Note: This insallation will configure mysql connector and places a respective jar file in /usr/share/java/ directory. this will help All JAVA API to connect with underlying mysql database. 
 
 		 			 step b 3.2) Start the MariaDB server:   
-                      				 systemctl start mariadb server
+                      				 systemctl start mariadb 
                      step b.3.3) Configure mysql_secure_installation using command /usr/bin/mysql_secure_installation as below.
 			 						[...]
 			 						Enter current password for root (enter for none):
