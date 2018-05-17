@@ -275,3 +275,30 @@ MariaDB [(none)]> show databases;
 +--------------------+
 11 rows in set (0.00 sec)
 MariaDB [(none)]> 
+
+[root@instance-1 skanduri1987]# mysql -u root -p 
+Enter password: 
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 379
+Server version: 5.5.56-MariaDB MariaDB Server
+Copyright (c) 2000, 2017, Oracle, MariaDB Corporation Ab and others.
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| hive               |
+| hue                |
+| mysql              |
+| navdb              |
+| navmsdb            |
+| oozie              |
+| ooziedb            |
+| performance_schema |
+| rman               |
+| scm                |
+| sentry             |
++--------------------+
+12 rows in set (0.01 sec)
+
