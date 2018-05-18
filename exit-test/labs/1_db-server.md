@@ -236,3 +236,26 @@ Uptime:                 14 min 0 sec
 Threads: 1  Questions: 92  Slow queries: 0  Opens: 1  Flush tables: 2  Open tables: 27  Queries per second avg: 0.109
 --------------
 [root@instance-1 yum.repos.d]# 
+
+[root@instance-1 yum.repos.d]# mysql -u root -pbigdata
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 130
+Server version: 5.5.56-MariaDB MariaDB Server
+Copyright (c) 2000, 2017, Oracle, MariaDB Corporation Ab and others.
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| hive               |
+| hue                |
+| mysql              |
+| oozie              |
+| performance_schema |
+| rman               |
+| scm                |
+| sentry             |
++--------------------+
+9 rows in set (0.00 sec)
+MariaDB [(none)]> 
